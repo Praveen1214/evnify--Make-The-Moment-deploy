@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "concurrently \"nodemon server.js\" \"cd client && npm start\"",
     "build": "cd client && npm install && npm run build",
-    "vercel-build": "cd client && npm install && npm run build"
+    "vercel-build": "cd client && npm install && CI=false npm run build"
   },
   "author": "",
   "license": "ISC",
